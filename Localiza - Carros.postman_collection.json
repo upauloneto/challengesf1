@@ -1,0 +1,75 @@
+{
+	"info": {
+		"_postman_id": "92a2ea84-f83c-49a8-953d-5b60696603cd",
+		"name": "Localiza - Carros",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Cadastro - Sucesso",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "[\r\n    {\r\n        \"chassi\": \"123456789\",\r\n        \"combustivel\": \"GASOLINA\",\r\n        \"renavam\": \"123456\",\r\n        \"cor\": \"BRANCA\",\r\n        \"modelo\": \"CRETA\",\r\n        \"fabricante\": \"HYUNDAI\",\r\n        \"placa\": \"POL4C62\",\r\n        \"situacaoVeiculo\": \"OK\",\r\n        \"quilometragem\": 20000\r\n    }\r\n]",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://moldsoft-community-developer-edition.na124.force.com/services/apexrest/v1/cars",
+					"protocol": "https",
+					"host": [
+						"moldsoft-community-developer-edition",
+						"na124",
+						"force",
+						"com"
+					],
+					"path": [
+						"services",
+						"apexrest",
+						"v1",
+						"cars"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Cadastro - Fabricante 404",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "[\r\n    {\r\n        \"chassi\": \"123456789\",\r\n        \"combustivel\": \"DIESEL\",\r\n        \"renavam\": \"123456\",\r\n        \"cor\": \"BRANCA\",\r\n        \"modelo\": \"X5\",\r\n        \"fabricante\": \"BMW\",\r\n        \"placa\": \"PMF1938\",\r\n        \"situacaoVeiculo\": \"OK\",\r\n        \"quilometragem\": 4554\r\n    }\r\n]",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://moldsoft-community-developer-edition.na124.force.com/services/apexrest/v1/cars",
+					"protocol": "https",
+					"host": [
+						"moldsoft-community-developer-edition",
+						"na124",
+						"force",
+						"com"
+					],
+					"path": [
+						"services",
+						"apexrest",
+						"v1",
+						"cars"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
